@@ -13,10 +13,21 @@
 \usepackage{xcolor}
 \usepackage{csquotes}
 \usepackage{pgfgantt}
+\usepackage{titlesec}
 \usepackage[style=verbose-ibid,backend=bibtex]{biblatex}
 \usepackage{hyperref}
 
+\newcommand{\TODO}[1]{{\textcolor{red}{[\textbf{TODO:} #1]}}}
+\newcommand{\acronym}{{\sc YourAcronym}\xspace}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
 \renewcommand{\footnotesize}{\scriptsize} % should correspond to 8pt
+\renewcommand{\cite}{\autocite} % citations in footnotes
 \bibliography{bibliography}
 
 \headheight=14pt
@@ -32,7 +43,7 @@
 
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhead[C]{PROPOSAL ACRONYM - Standard EF}
+\fancyhead[C]{\acronym---Standard EF}
 \fancyfoot{}
 \fancyfoot[C]{Part B - Page \thepage~of \pageref{LastPage}}
 
@@ -43,12 +54,7 @@
 \renewcommand{\contentsname}{TABLE OF CONTENTS}
 
 
-% \title{Part B}
-% \author{}
-% \date{}
-
 \begin{document}
-% \maketitle
 
 \phantom{a}
 \vspace{15mm}
@@ -71,7 +77,7 @@
           PART B
           \vspace{2.5cm}
 
-          ``PROPOSAL ACRONYM''
+          ``\acronym''
           \vspace{2cm}
 
           \textbf{This proposal is to be evaluated as:}
@@ -97,7 +103,7 @@
 \newcommand\roty[1]{\rotatebox[origin=c]{90}{\parbox{4cm}{\raggedright\textbf{#1}}}}
 \newcommand\MyHead[2]{\multicolumn{1}{l|}{\parbox{#1}{\centering #2}}}
 
-\noindent\begin{tabular}{|p{2.5cm}|l|b{1em}|b{1em}|c|c|c|c|}
+\noindent\begin{tabular}{|m{2.4cm}|m{1cm}|b{1em}|b{1em}|c|m{2.5cm}|m{2cm}|c|}
 \hline
   \textbf{Participants}
 & \MyHead{1cm}{\textbf{Legal\\Entity\\Short\\Name}}
@@ -117,7 +123,7 @@
 
 Data for non-academic beneficiaries
 
-\noindent\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\noindent\begin{tabular}{|m{1.7cm}|m{2cm}|m{1.8cm}|c|c|m{2.5cm}|c|c|c|}
 \hline
   \textbf{Name}
 & \roty{Location of research premises (city / country)}
@@ -403,7 +409,7 @@ All organisations (whether beneficiary or partner organisation) must complete th
           PART B
           \vspace{2.5cm}
 
-          ``PROPOSAL ACRONYM''
+          ``\acronym''
           \vspace{2cm}
 
           \textbf{This proposal is to be evaluated as:}
