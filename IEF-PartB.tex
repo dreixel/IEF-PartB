@@ -1,10 +1,11 @@
 \documentclass[a4paper,11pt]{article}
 
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{eurosym}
 \usepackage{lastpage}
 \usepackage{xspace}
-\usepackage[margin=15mm,includehead,includefoot]{geometry}
+\usepackage[margin=16mm,includehead,includefoot]{geometry}
 \usepackage{fancyhdr}
 \usepackage{booktabs}
 \usepackage{graphicx}
@@ -26,7 +27,8 @@
 \titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 \titleformat*{\subsubsection}{\normalsize\bfseries}
-\renewcommand{\footnotesize}{\scriptsize} % should correspond to 8pt
+\let\oldfootnotesize\footnotesize
+\renewcommand{\footnotesize}{\fontsize{8bp}{1em}\selectfont}
 \renewcommand{\cite}{\autocite} % citations in footnotes
 \bibliography{bibliography}
 
@@ -340,7 +342,7 @@ The Experienced Researchers must provide a list of achievements reflecting their
 All organisations (whether beneficiary or partner organisation) must complete the appropriate table below. Complete one table of maximum one page for the beneficiary and half a page per partner organisation (min font size: 9). The experts will be instructed to disregard content above this limit.
 \vspace{\baselineskip}
 
-{\footnotesize % should be 9pt
+{\fontsize{9bp}{1em}\selectfont % should be 9pt
 \noindent\begin{tabular}{>{\raggedright}p{.25\textwidth}p{.7\textwidth}}
   \multicolumn{2}{l}{\textbf{Beneficiary X}} \\\midrule
 \textbf{General Description} &
@@ -367,7 +369,7 @@ All organisations (whether beneficiary or partner organisation) must complete th
 \end{tabular}}
 \vspace{\baselineskip}
 
-{\footnotesize
+{\fontsize{9bp}{1em}\selectfont
 \noindent\begin{tabular}{>{\raggedright}p{.25\textwidth}p{.7\textwidth}}
   \multicolumn{2}{l}{\textbf{Partner Organisation Y}} \\\midrule
 \textbf{General Description} &
