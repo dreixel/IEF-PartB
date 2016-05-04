@@ -84,21 +84,20 @@
 \end{flushright}
 }
 
+
+% To correctly align fancy headers.
+% Courtesy of: http://tex.stackexchange.com/a/88136/84485
+\makeatletter
+\newcommand{\resetHeadWidth}{\fancy@setoffs}
+\makeatother
+
 \pagestyle{fancy}
 \fancyhead{}
 \fancyhead[C]{\color{gray}{\acronym\xspace - Standard EF / CAR / RI / GF\\
 (Delete as appropriate and include as header on each page)}}
 \fancyfoot{}
 \fancyfoot[C]{\color{gray}{Part B - Page \thepage~of \pageref*{sec:endpage}}}
-
-\fancypagestyle{tocStyle}{
-\fancyhead{}
-\
-\fancyhead[C]{\color{gray}{\acronym\xspace - Standard EF / CAR / RI / GF\\
-(Delete as appropriate and include as header on each page)}}
-\fancyfoot{}
-\fancyfoot[C]{\color{gray}{Part B - Page \thepage~of \pageref*{sec:endpage}}}
-}
+\resetHeadWidth
 
 \renewcommand{\headrulewidth}{0pt}
 
