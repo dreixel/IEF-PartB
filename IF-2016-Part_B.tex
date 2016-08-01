@@ -15,7 +15,17 @@
 \usepackage[usenames,dvipsnames,table]{xcolor}
 \usepackage{csquotes}
 \usepackage{pgfgantt}
+
 \usepackage[compact]{titlesec}
+% HotFix from http://tex.stackexchange.com/a/300259/84485
+% Version1 of titlesec is not compatible with the latest texlive. 
+% Either the titlesec package must be updated, or the following HotFix used:
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+
 \usepackage{enumitem}
 \usepackage[style=verbose-ibid,backend=bibtex]{biblatex}
 \usepackage{hyperref}
