@@ -15,6 +15,7 @@
 \usepackage[usenames,dvipsnames,table]{xcolor}
 \usepackage{csquotes}
 \usepackage{pgfgantt}
+\usepackage[nohyperlinks,nolist]{acronym}
 
 \usepackage[compact]{titlesec}
 % HotFix from http://tex.stackexchange.com/a/300259/84485
@@ -38,7 +39,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 \newcommand{\TODO}[1]{{\textcolor{red}{[\textbf{TODO:} #1]}}}
-\newcommand{\acronym}{{\sc Proposal Acronym}\xspace}
+\newcommand{\IFacronym}{{\sc Proposal Acronym}\xspace}
 % \titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 % \titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 % \titlespacing\subsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
@@ -131,7 +132,12 @@
 }
 \makeatother
 
-
+%List of acronyms used in the proposal 
+%read the acronym package manual for details
+\begin{acronym}
+\acro{IF}{Individual Fellowship}
+\acro{tima}[TIMA]{This is my acronym}
+\end{acronym}
 
 \begin{document}
 %\begin{linenumbers}
