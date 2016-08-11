@@ -39,7 +39,6 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 \newcommand{\TODO}[1]{{\textcolor{red}{[\textbf{TODO:} #1]}}}
-\newcommand{\IFacronym}{{\sc Proposal Acronym}\xspace}
 % \titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 % \titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 % \titlespacing\subsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
@@ -133,13 +132,18 @@
 \makeatother
 
 %List of acronyms used in the proposal 
-%read the acronym package manual for details
+%read the acronym package manual for details: http://ctan.mackichan.com/macros/latex/contrib/acronym/acronym.pdf
+%\acs{PropAcronym} gives acronym [in square brackets]
+%\acl{PropAcronym} gives long form of acronym, probably not used {in second set of braces}
+%\acf{PropAcronym} gives both
 \begin{acronym}
-\acro{IF}{Individual Fellowship}
-\acro{tima}[TIMA]{This is my acronym}
+\acro{IF}{Individual Fellowships}
+\acro{PropAcronym}[PROPOSAL ACRONYM]{This is my proposal's acronym}
 \end{acronym}
 
 \begin{document}
+%mark proposal acronym as used, such that the short-hand form is always used by default.
+\acused{PropAcronym}
 %\begin{linenumbers}
 
 \include{doc1}
