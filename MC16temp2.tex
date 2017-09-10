@@ -1,0 +1,298 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{eurosym}
+\usepackage{lastpage}
+\usepackage{xspace}
+\usepackage[margin=16mm,includehead,includefoot]{geometry}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{pgfgantt}
+\usepackage{titlesec}
+\usepackage[style=verbose-ibid,backend=bibtex]{biblatex}
+\usepackage[colorlinks=true, citecolor=black, linkcolor=black, urlcolor=blue]{hyperref}
+\usepackage{lscape}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, graphicx, mathrsfs, color, genyoungtabtikz, enumitem, tikz, mathtools,stmaryrd, framed}
+
+\newcommand{\todo}[1]{{\textcolor{red}{[\textbf{TO DO:} #1]}}}
+\newcommand{\acronym}{{\sc YourAcronym}\xspace}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+\let\oldfootnotesize\footnotesize
+\renewcommand{\footnotesize}{\fontsize{8bp}{1em}\selectfont}
+\renewcommand{\cite}{\autocite} % citations in footnotes
+\bibliography{bibliography}
+
+\headheight=14pt
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[C]{\acronym \ -- GF}
+\fancyfoot{}
+\fancyfoot[C]{Part B - Page \thepage~of \pageref{LastPage}}
+
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+
+
+
+%%\newcommand{\nchar}{\operatorname{char}}
+%\newcommand\sss{\mathfrak S_}
+%\newcommand\hhh{\mathscr H_}
+%\newcommand\rrr{\mathscr R_}
+%%\newcommand\spe[1]{\operatorname{S}_{#1}}
+%\newcommand\rspe[1]{\operatorname{S}^{#1}}
+%%\newcommand\D[1]{\operatorname{D}_{#1}}
+%\newcommand\rD[1]{\operatorname{D}^{#1}}
+%\newcommand\la\lambda
+%\newcommand\La\Lambda
+
+
+
+\begin{document}
+
+%\phantom{a}
+%\vspace{15mm}
+%\begin{center}
+%
+%
+%        \Large{
+%      
+%     
+%        \textbf{Document 2\\\vspace{15mm}START PAGE}
+%  
+%          \vspace{15mm}
+%          MARIE SK\L{}ODOWSKA-CURIE ACTIONS\\
+%          \vspace{1cm}
+%          
+%          \textbf{Individual Fellowships (IF)}\\
+%          \textbf{Call: H2020-MSCA-IF-2016}
+%          \vspace{2cm}                   
+%
+%          PART B
+%          \vspace{2.5cm}
+%
+%          ``\acronym''
+%          \vspace{2cm}
+%
+%          \textbf{This proposal is to be evaluated as:}
+%          \vspace{.5cm}
+%
+%          \textbf{[GF]}
+%        }
+%
+%  \end{center}
+%\vspace{1cm}
+
+\newpage
+%\setcounter{tocdepth}{1} %to remove subsections from table of contents
+\setcounter{section}{3}
+
+\textbf{\LARGE{Document 2\vspace{8mm}}}
+
+\section{CV of the Experienced Researcher}
+\label{sec:cv}
+
+The CV is intrinsic to the evaluation of the whole proposal and is assessed throughout the 3 evaluation criteria by the expert evaluators.
+
+This section should be limited to maximum 5 pages and should include the standard academic and research record. Any research career gaps and/or unconventional paths should be clearly explained so that this can be fairly assessed by the independent evaluators.
+
+The experienced researchers must provide a list of achievements reflecting their track record, and this may include, if applicable:
+\begin{enumerate}
+\item Publications in peer-reviewed scientific journals, peer-reviewed conference proceedings and/or monographs of their respective research fields, indicating also the number of citations (excluding self-citations) they have attracted.
+\item Granted patent(s).
+\item Research monographs, chapters in collective volumes and any translations thereof.
+\item Invited presentations to peer-reviewed, internationally established conferences and/or international advanced schools.
+\item Research expeditions that the experienced researcher has led.
+\item Organisation of International conferences in the field of the researcher (membership in the steering and/or programme committee).
+\item Examples of participation in industrial innovation.
+\item Prizes and Awards.
+\item Funding received so far
+\item Supervising, mentoring activities, if applicable.
+\end{enumerate}
+
+\newpage
+
+\section{Capacity of the Participating Organisations}
+\label{sec:capacities}
+
+Beneficiaries and partner organisations must complete the appropriate table below.
+
+Complete one table (min font size: 9) of maximum one page per beneficiary and one page per partner organisation. The expert evaluators will be instructed to disregard content above this limit.
+\vspace{\baselineskip}
+
+{\fontsize{9bp}{1em}\selectfont % should be 9pt
+\noindent\begin{tabular}{>{\raggedright}p{.25\textwidth}p{.7\textwidth}}
+  \multicolumn{2}{l}{\textbf{Beneficiary X}} \\\midrule
+\textbf{General Description} &
+
+\\\midrule
+\textbf{Role and Commitment of key persons (supervisor)} &
+(names, title, qualifications of the main supervisor)
+\\\midrule
+\textbf{Key Research Facilities, Infrastructure and Equipment} &
+Demonstrate that the beneficiary has sufficient facilities and infrastructure to host and/or offer a suitable environment for training and transfer of knowledge to the recruited experienced researcher
+\\\midrule
+\textbf{Independent research premises?} &
+Please explain the status of the beneficiary's research facilities ? i.e. are they owned by the beneficiary or rented by it? Are its research premises wholly independent from other entities?
+
+\\\midrule
+\textbf{Previous Involvement in Research and Training Programmes} &
+Detail any (maximum 5) relevant EU, national or international research and training actions/projects in which the beneficiary has previously participated
+
+\\\midrule
+\textbf{Current involvement in Research and Training Programmes} &
+Detail the EU and/or national research and training actions in which the beneficiary is currently participating
+
+\\\midrule
+\textbf{Relevant Publications and/or research/innovation products} &
+(Max 5) Only list items (co-)produced by the supervisor
+
+\\\bottomrule
+\end{tabular}}
+\vspace{\baselineskip}
+
+{\fontsize{9bp}{1em}\selectfont
+\noindent\begin{tabular}{>{\raggedright}p{.25\textwidth}p{.7\textwidth}}
+  \multicolumn{2}{l}{\textbf{Partner Organisation Y}} \\\midrule
+\textbf{General Description} &
+
+\\\midrule
+\textbf{Key Persons and Expertise (supervisor)} &
+
+\\\midrule
+\textbf{Key Research facilities, infrastructure and equipment} &
+
+\\\midrule
+\textbf{Previous and Current Involvement in Research and Training Programmes} &
+
+\\\midrule
+\textbf{Relevant Publications and/or research/innovation product} &
+(Max 3)
+\\\bottomrule
+\end{tabular}}
+
+\newpage
+
+\section{Ethical Issues}
+
+Compliance with the relevant ethics provisions is essential from the beginning to
+the end of the action and is an integral part of research funded by the European
+Union within Horizon 2020.
+
+Applicants submitting research proposals for funding within Marie Sk\l{}odowska-Curie actions in Horizon 2020 should demonstrate proactively to the REA that they are aware of and will comply with European and national legislation and fundamental ethical principles, including those reflected in the \href{http://www.europarl.europa.eu/charter/pdf/text_en.pdf}{Charter of Fundamental Rights of the European Union} and the \href{http://www.echr.coe.int/Documents/Convention_ENG.pdf}{European Convention on Human Rights and its Supplementary Protocols}.
+
+Please be aware that it is the applicants' responsibility to identify any potential ethical issue, to handle the ethical aspects of the proposal and to detail how these aspects will be addressed.
+
+\subsection*{The Ethics Review Procedure in Horizon 2020}
+All proposals above threshold and considered for funding will undergo an Ethics Review carried out by independent ethics experts. When submitting a proposal to Horizon 2020, all applicants are required to complete an ``Ethics Issues Table (EIT)" in the Part A of the proposal. Applicants who flag ethical issues in the EIT
+have to also complete a more in depth Ethics Self-Assessment in Part B.
+
+The ethics self-assessment will become part of the Grant Agreement and may
+thus lead to binding obligations that may later on be checked during ethics
+checks, reviews and audits.
+
+For more details, please refer to the H2020 \href{http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-self-assess_en.pdf}{``How to complete your Ethics
+Self- Assessment"} guide.
+
+\fbox{\href{http://ec.europa.eu/research/participants/docs/h2020-funding-guide/cross-cutting-issues/ethics_en.htm}{Ethics link}}
+
+\subsection*{Ethics Self-Assessment (Part B)}
+
+The Ethics Self-Assessment must:
+\begin{enumerate}
+\item Describe how the proposal meets the EU and national legal and ethics requirements of the country/countries where the task raising ethical issues is to be carried out.
+\end{enumerate}
+
+For more information on how to deal with Third Countries please see Article 34 of the \href{http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/amga/h2020-amga_en.pdf}{Annotated Model Grant Agreement}, as well as this \href{http://ec.europa.eu/justice/data-protection/international-transfers/adequacy/index_en.htm}{link}.
+
+Please list the documents provided with their expiry date.
+
+Ensure early compliance of the proposed research with EU and national legislation on ethics in research. Should your proposal be selected for funding, you will be required to provide as soon as possible the following documents (if applicable):
+
+\begin{itemize}
+\item an opinion from an Ethics Committee/Authority, required under national law;
+\item any other ethics-related documents mandatory under EU or national legislation;
+\end{itemize}
+
+If you have not already applied for/received the ethics approval/required ethics documents when submitting the proposal, please indicate in this section the approximate date when you will provide the missing approval/any other ethics documents, to the REA (scanned copy). Please state explicitly that you will not proceed with any research with ethical implications before the REA has received a scanned copy of all documents proving compliance with existing EU/national legislation on ethics.
+
+\begin{framed}
+\noindent If these documents are not issued in English, you are encouraged to submit also an English summary\\
+(containing in particular, if available, the conclusions of the Committee or Ethics Authority concerned). 
+If you plan to request these ethics documents specifically for your proposed action, your request must contain an explicit reference to the action's title.
+\end{framed}
+
+\begin{enumerate}[resume]
+\item Explain in detail how you intend to address the ethical issues flagged, in particular with regard to:
+\begin{itemize}
+\item the research objectives (e.g.~study of vulnerable populations, cooperation with a Third Country, etc.);
+\item the research methodology (e.g.~clinical trials, involvement of children and related information and consent/assent procedures, data protection and privacy issues related to data collected, etc.);
+\item the potential impact of the research (e.g.~dual use issues, environmental damage, malevolent use, etc.).
+\end{itemize}
+\end{enumerate}
+
+\newpage
+
+\section{Letters of Commitment (GF only)}
+	
+Please use this section only for the Global Fellowships to insert scanned copies of the required Letters of Commitment from the partner organisations in TC. Minimum requirements for the letter of commitment:  
+
+\begin{itemize}
+\item heading or stamp from the institution;
+\item up-to-date (i.e.~issued after the call publication date, 12 April 2016);
+\item the text must demonstrate the will to actively participate in the proposed action and the precise role; 
+\item signed by the legal representative.
+\end{itemize}
+
+Please note that proposals failing to comply with the above-mentioned requirements will be declared inadmissible.
+
+\newpage
+
+\vspace{15mm}
+\begin{center}
+
+
+        \Large{
+      
+     
+        \textbf{ENDPAGE}
+  
+          \vspace{15mm}
+          MARIE SK\L{}ODOWSKA-CURIE ACTIONS\\
+          \vspace{1cm}
+          
+          \textbf{Individual Fellowships (IF)}\\
+          \textbf{Call: H2020-MSCA-IF-2016}
+          \vspace{2cm}                   
+
+          PART B
+          \vspace{2.5cm}
+
+          ``\acronym''
+          \vspace{2cm}
+
+          \textbf{This proposal is to be evaluated as:}
+          \vspace{.5cm}
+
+          \textbf{[GF]}
+        }
+
+  \end{center}
+\vspace{1cm}
+
+\end{document}
